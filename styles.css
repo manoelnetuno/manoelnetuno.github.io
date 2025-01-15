@@ -45,6 +45,30 @@ section {
     margin: 20px 0;
 }
 
+#projetos {
+    display: flex; /* Usar flexbox para os projetos */
+    flex-direction: column; /* Colunas para as seções de front-end e back-end */
+}
+
+#projetos h3 {
+    margin-top: 0; /* Remove a margem superior dos títulos */
+}
+
+.projetos-container {
+    display: flex; /* Usar flexbox para os projetos */
+    justify-content: space-around; /* Espaçamento igual entre os projetos */
+    margin-bottom: 20px; /* Margem abaixo de cada grupo de projetos */
+}
+
+.projeto {
+    background: #f4f4f4; /* Cor de fundo dos projetos */
+    border: 1px solid #ccc; /* Borda dos projetos */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    width: 45%; /* Largura dos projetos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;

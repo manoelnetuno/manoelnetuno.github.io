@@ -12,19 +12,32 @@ header {
     text-align: center;
 }
 
+nav {
+    text-align: center; /* Centraliza a navegação */
+    margin: 20px 0; /* Adiciona margem acima e abaixo da navegação */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Mantém os itens em linha */
+    margin: 0 15px; /* Espaçamento entre os botões */
 }
 
 nav a {
-    color: #333;
-    text-decoration: none;
+    background: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background 0.3s; /* Transição suave para a cor de fundo */
+}
+
+nav a:hover {
+    background: #0056b3; /* Cor de fundo ao passar o mouse */
 }
 
 section {

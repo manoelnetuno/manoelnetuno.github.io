@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav a {
-    background: #007BFF; /* Cor de fundo do botão */
+    background: rgb(53, 112, 45); /* Cor de fundo do botão */
     color: #fff; /* Cor do texto */
     padding: 10px 15px; /* Espaçamento interno do botão */
     text-decoration: none; /* Remove o sublinhado */
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #0056b3; /* Cor de fundo ao passar o mouse */
+    background: #4ca34c; /* Cor de fundo ao passar o mouse */
 }
 
 section {

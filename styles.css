@@ -6,10 +6,13 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-image: url('./src/images/LOGO-CÓDIGO.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    height: 300px; /* Define a altura do cabeçalho */
     opacity: 0; /* Inicialmente invisível */
     transform: translateY(-20px); /* Move para cima */
     animation: fadeInUp 1s forwards; /* Animação de deslizamento */

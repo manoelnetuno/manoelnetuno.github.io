@@ -96,3 +96,18 @@ footer {
     background: #333;
     color: #fff;
 }
+
+.btn {
+    display: inline-block; /* Para que o link se comporte como um botão */
+    background: rgb(53, 112, 45); /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 10px; /* Margem acima do link */
+    transition: background 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.btn:hover {
+    background: #4ca34c; /* Cor de fundo ao passar o mouse */
+}

@@ -12,7 +12,7 @@ header {
     color: #fff; /* Cor do texto */
     padding: 20px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
-    height: 200px; /* Define a altura do cabeçalho */
+    height: 100px; /* Define a altura do cabeçalho */
     opacity: 1; /* Inicialmente invisível */
     transform: translateY(-20px); /* Move para cima */
     animation: fadeInUp 1s forwards; /* Animação de deslizamento */

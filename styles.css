@@ -40,9 +40,17 @@ nav a:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
 }
 
+.flex-container {
+    display: flex; /* Ativa o Flexbox para o contêiner */
+    justify-content: space-between; /* Espaçamento entre as seções */
+    margin: 20px; /* Margem ao redor do contêiner */
+}
+
 section {
     padding: 20px;
     margin: 20px 0;
+    flex: 1; /* Permite que as seções ocupem espaço flexível */
+    min-width: 300px; /* Largura mínima para as seções */
 }
 
 section h2 {
@@ -54,7 +62,6 @@ section h2 {
     justify-content: space-between; /* Espaçamento entre os itens */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     padding: 20px; /* Adiciona padding */
-    margin: 20px 0; /* Margem acima e abaixo */
 }
 
 .sobre-texto, .contato-info {
@@ -135,11 +142,4 @@ footer {
 
 .projeto a:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
 }

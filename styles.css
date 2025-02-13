@@ -10,11 +10,17 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-20px); /* Move para cima */
+    animation: fadeInUp 1s forwards; /* Animação de deslizamento */
 }
 
 nav {
     text-align: center; /* Centraliza a navegação */
     margin: 20px 0; /* Adiciona margem acima e abaixo da navegação */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-20px); /* Move para cima */
+    animation: fadeInUp 1s forwards 0.5s; /* Animação de deslizamento com atraso */
 }
 
 nav ul {
@@ -54,33 +60,14 @@ nav a:hover {
     background: #f9f9f9; /* Cor de fundo das seções */
     border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    flex: 1; /* Permite que as seções ocupem espaço flexível */
-    min-width: 300px; /* Largura mínima para as seções */
-}
-
-section h2 {
-    text-align: center; /* Centraliza os títulos das seções */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-20px); /* Move para cima */
+    animation: fadeInUp 1s forwards; /* Animação de deslizamento */
 }
 
 .sobre-texto, .contato-info {
     flex: 1; /* Permite que o texto ocupe espaço flexível */
     margin-right: 20px; /* Margem à direita para espaçamento */
-}
-
-.sobre-imagem, .contato-imagem {
-    flex: 1; /* Permite que a imagem ocupe espaço flexível */
-    text-align: center; /* Centraliza a imagem */
-}
-
-.sobre-imagem img, .contato-imagem img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas para as imagens */
 }
 
 footer {
@@ -104,51 +91,14 @@ footer {
 .btn:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
 }
-
-/* Estilos para os projetos */
-#projetos {
-    display: flex; /* Usar flexbox para os projetos */
-    flex-direction: column; /* Colunas para as seções de front-end e back-end */
-}
-
-#projetos h3 {
-    margin-top: 0; /* Remove a margem superior dos títulos */
-}
-
-.projetos-container {
-    display: flex; /* Usar flexbox para os projetos */
-    justify-content: space-around; /* Espaçamento igual entre os projetos */
-    flex-wrap: wrap; /* Permite que os projetos se movam para a próxima linha se não houver espaço */
-    margin-bottom: 20px; /* Margem abaixo de cada grupo de projetos */
-}
-
-.projeto {
-    background: #f4f4f4; /* Cor de fundo dos projetos */
-    border: 1px solid #ccc; /* Borda dos projetos */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    width: 45%; /* Largura dos projetos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-    margin: 10px; /* Margem entre os projetos */
-}
-.projeto a {
-    display: inline-block; /* Para que os links se comportem como botões */
-    background: rgb(53, 112, 45); /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
-    padding: 8px 12px; /* Espaçamento interno do botão */
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-top: 10px; /* Margem acima dos links */
-    transition: background 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.projeto a:hover {
-    background: #4ca34c; /* Cor de fundo ao passar o mouse */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+/* Animação */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -75,6 +75,21 @@ section h2 {
     margin: 10px; /* Margem entre os projetos */
 }
 
+.projeto a {
+    display: inline-block; /* Para que os links se comportem como botões */
+    background: rgb(53, 112, 45); /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 8px 12px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 10px; /* Margem acima dos links */
+    transition: background 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.projeto a:hover {
+    background: #4ca34c; /* Cor de fundo ao passar o mouse */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;

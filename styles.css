@@ -55,6 +55,7 @@ nav a:hover {
     display: flex; /* Ativa o Flexbox para o contêiner */
     justify-content: space-between; /* Espaçamento entre as seções */
     margin: 20px; /* Margem ao redor do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
 }
 
 .flex-section {
@@ -149,4 +150,23 @@ footer {
 
 .btn:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
+}
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Muda para exibição em bloco em telas menores */
+        margin: 10px 0; /* Margem vertical entre os itens do menu */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Muda a direção do flex para coluna em telas menores */
+    }
+
+    .projeto {
+        width: 100%; /* Largura total em telas menores */
+    }
+
+    .sobre-texto, .contato-info {
+        margin-right: 0; /* Remove a margem à direita em telas menores */
+        margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+    }
 }

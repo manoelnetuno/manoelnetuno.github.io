@@ -102,45 +102,46 @@ footer {
         transform: translateY(0);
     }
 }
-/* Estilos para os projetos */
 #projetos {
-    display: flex; /* Usar flexbox para os projetos */
-    flex-direction: column; /* Colunas para as seções de front-end e back-end */
+    margin: 20px; /* Margem ao redor da seção de projetos */
 }
-#projetos h3 {
-    margin-top: 0; /* Remove a margem superior dos títulos */
-}
+
 .projetos-container {
     display: flex; /* Usar flexbox para os projetos */
     justify-content: space-around; /* Espaçamento igual entre os projetos */
     flex-wrap: wrap; /* Permite que os projetos se movam para a próxima linha se não houver espaço */
-    margin-bottom: 20px; /* Margem abaixo de cada grupo de projetos */
 }
+
 .projeto {
     background: #f4f4f4; /* Cor de fundo dos projetos */
     border: 1px solid #ccc; /* Borda dos projetos */
     border-radius: 5px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno */
-    width: 45%; /* Largura dos projetos */
+    width: 30%; /* Largura dos projetos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
     margin: 10px; /* Margem entre os projetos */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
 }
-.projeto a {
-    display: inline-block; /* Para que os links se comportem como botões */
+
+.projeto:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do projeto ao passar o mouse */
+}
+
+.projeto h4 {
+    margin-top: 0; /* Remove a margem superior dos títulos */
+}
+
+.btn {
+    display: inline-block; /* Para que o link se comporte como um botão */
     background: rgb(53, 112, 45); /* Cor de fundo do botão */
     color: #fff; /* Cor do texto */
-    padding: 8px 12px; /* Espaçamento interno do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
     text-decoration: none; /* Remove o sublinhado */
     border-radius: 5px; /* Bordas arredondadas */
-    margin-top: 10px; /* Margem acima dos links */
+    margin-top: 10px; /* Margem acima do link */
     transition: background 0.3s; /* Transição suave para a cor de fundo */
 }
-.projeto a:hover {
+
+.btn:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
-}
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
 }

@@ -108,7 +108,7 @@ footer {
 
 .projetos-container {
     display: flex; /* Usar flexbox para os projetos */
-    justify-content: space-around; /* Espaçamento igual entre os projetos */
+    justify-content: space-between; /* Espaçamento igual entre os projetos */
     flex-wrap: wrap; /* Permite que os projetos se movam para a próxima linha se não houver espaço */
 }
 
@@ -117,9 +117,9 @@ footer {
     border: 1px solid #ccc; /* Borda dos projetos */
     border-radius: 5px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno */
-    width: 30%; /* Largura dos projetos */
+    width: calc(50% - 20px); /* Largura dos projetos para duas colunas, com margem */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-    margin: 10px; /* Margem entre os projetos */
+    margin: 10px 0; /* Margem entre os projetos */
     transition: transform 0.3s; /* Transição suave para o efeito de hover */
 }
 

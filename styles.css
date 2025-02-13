@@ -7,7 +7,7 @@ body {
 
 header {
     background-image: url('./src/images/LOGO-CÓDIGO.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o cabeçalho */
+    background-size:contain; /* Ajusta o tamanho da imagem para cobrir o cabeçalho */
     background-position: center; /* Centraliza a imagem */
     color: #fff; /* Cor do texto */
     padding: 20px 0; /* Espaçamento interno */

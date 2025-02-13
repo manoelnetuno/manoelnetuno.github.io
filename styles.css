@@ -46,6 +46,16 @@ nav a:hover {
     margin: 20px; /* Margem ao redor do contêiner */
 }
 
+.flex-section {
+    display: flex; /* Ativa o Flexbox para as seções */
+    flex: 1; /* Permite que as seções ocupem espaço flexível */
+    margin: 10px; /* Margem entre as seções */
+    padding: 20px; /* Padding interno */
+    background: #f9f9f9; /* Cor de fundo das seções */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
 section {
     padding: 20px;
     margin: 20px 0;
@@ -55,13 +65,6 @@ section {
 
 section h2 {
     text-align: center; /* Centraliza os títulos das seções */
-}
-
-.flex-section {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 20px; /* Adiciona padding */
 }
 
 .sobre-texto, .contato-info {
@@ -128,7 +131,6 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
     margin: 10px; /* Margem entre os projetos */
 }
-
 .projeto a {
     display: inline-block; /* Para que os links se comportem como botões */
     background: rgb(53, 112, 45); /* Cor de fundo do botão */
@@ -142,4 +144,11 @@ footer {
 
 .projeto a:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
 }

@@ -12,7 +12,7 @@ header {
     color: #fff; /* Cor do texto */
     padding: 20px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
-    height: 100px; /* Define a altura do cabeçalho */
+    height: 190px; /* Define a altura do cabeçalho */
     opacity: 1; /* Inicialmente invisível */
     transform: translateY(-20px); /* Move para cima */
     animation: fadeInUp 1s forwards; /* Animação de deslizamento */
@@ -61,7 +61,7 @@ nav a:hover {
     flex: 1; /* Permite que as seções ocupem espaço flexível */
     margin: 10px; /* Margem entre as seções */
     padding: 20px; /* Padding interno */
-    background: #f9f9f9; /* Cor de fundo das seções */
+    background: #333; /* Cor de fundo das seções */
     border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
     opacity: 0; /* Inicialmente invisível */

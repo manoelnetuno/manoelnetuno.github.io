@@ -49,45 +49,28 @@ section h2 {
     text-align: center; /* Centraliza os títulos das seções */
 }
 
-#projetos {
-    display: flex; /* Usar flexbox para os projetos */
-    flex-direction: column; /* Colunas para as seções de front-end e back-end */
+.flex-section {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px; /* Adiciona padding */
+    margin: 20px 0; /* Margem acima e abaixo */
 }
 
-#projetos h3 {
-    margin-top: 0; /* Remove a margem superior dos títulos */
+.sobre-texto, .contato-info {
+    flex: 1; /* Permite que o texto ocupe espaço flexível */
+    margin-right: 20px; /* Margem à direita para espaçamento */
 }
 
-.projetos-container {
-    display: flex; /* Usar flexbox para os projetos */
-    justify-content: space-around; /* Espaçamento igual entre os projetos */
-    flex-wrap: wrap; /* Permite que os projetos se movam para a próxima linha se não houver espaço */
-    margin-bottom: 20px; /* Margem abaixo de cada grupo de projetos */
+.sobre-imagem, .contato-imagem {
+    flex: 1; /* Permite que a imagem ocupe espaço flexível */
+    text-align: center; /* Centraliza a imagem */
 }
 
-.projeto {
-    background: #f4f4f4; /* Cor de fundo dos projetos */
-    border: 1px solid #ccc; /* Borda dos projetos */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno */
-    width: 45%; /* Largura dos projetos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
-    margin: 10px; /* Margem entre os projetos */
-}
-
-.projeto a {
-    display: inline-block; /* Para que os links se comportem como botões */
-    background: rgb(53, 112, 45); /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
-    padding: 8px 12px; /* Espaçamento interno do botão */
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin-top: 10px; /* Margem acima dos links */
-    transition: background 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.projeto a:hover {
-    background: #4ca34c; /* Cor de fundo ao passar o mouse */
+.sobre-imagem img, .contato-imagem img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
 }
 
 footer {
@@ -110,4 +93,30 @@ footer {
 
 .btn:hover {
     background: #4ca34c; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para os projetos */
+#projetos {
+    display: flex; /* Usar flexbox para os projetos */
+    flex-direction: column; /* Colunas para as seções de front-end e back-end */
+}
+
+#projetos h3 {
+    margin-top: 0; /* Remove a margem superior dos títulos */
+}
+
+.projetos-container {
+    display: flex; /* Usar flexbox para os projetos */
+    justify-content: space-around; /* Espaçamento igual entre os projetos */
+    flex-wrap: wrap; /* Permite que os projetos se movam para a próxima linha se não houver espaço */
+    margin-bottom: 20px; /* Margem abaixo de cada grupo de projetos */
+}
+
+.projeto {
+    background: #f4f4f4; /* Cor de fundo dos projetos */
+    border: 1px solid #ccc; /* Borda dos projetos */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    width: 45%; /* Largura dos projetos */
+    box-shadow: 0 2px 
 }

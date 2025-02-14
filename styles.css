@@ -10,7 +10,7 @@ header {
     background-image: url('./src/images/LOGO-CÓDIGO.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size:contain; /* Ajusta o tamanho da imagem para cobrir o cabeçalho */
     background-position: center; /* Centraliza a imagem */
-    color: #fff; /* Cor do texto */
+    color: #82d851; /* Cor do texto */
     padding: 20px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     height: 250px; /* Define a altura do cabeçalho */
